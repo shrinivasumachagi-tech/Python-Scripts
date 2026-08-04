@@ -1,0 +1,206 @@
+{
+  "timestamp": "20260804_171153",
+  "results": [
+    {
+      "module": "startup",
+      "status": "PASS",
+      "message": "Boot sequence completed",
+      "data": {
+        "response": "U-Boot SPL\nCALIBRATION PASSED\n=>"
+      }
+    },
+    {
+      "module": "serial_number",
+      "status": "PASS",
+      "message": "Serial number workflow completed",
+      "data": {
+        "serial": "12345678",
+        "read": {
+          "serial": "12345678"
+        }
+      }
+    },
+    {
+      "module": "hardware_version",
+      "status": "PASS",
+      "message": "Hardware revision workflow completed",
+      "data": {
+        "revision": "A1",
+        "read": {
+          "revision": "A1"
+        }
+      }
+    },
+    {
+      "module": "mac_address",
+      "status": "PASS",
+      "message": "MAC workflow completed",
+      "data": {
+        "mac": "00:11:22:33:44:55",
+        "read": {
+          "mac": "00:11:22:33:44:55"
+        }
+      }
+    },
+    {
+      "module": "fpga_io",
+      "status": "PASS",
+      "message": "FPGA I/O workflow completed",
+      "data": {
+        "checks": [
+          {
+            "status": "PASS",
+            "message": "VHDL version read",
+            "data": {
+              "response": "VHDL 1.0.0"
+            }
+          },
+          {
+            "status": "PASS",
+            "message": "NIOS version read",
+            "data": {
+              "response": "NIOS 1.2.3"
+            }
+          },
+          {
+            "status": "PASS",
+            "message": "WDMCU version read",
+            "data": {
+              "response": "WDMCU 4.5.6"
+            }
+          },
+          {
+            "status": "PASS",
+            "message": "Signal test completed",
+            "data": {
+              "response": "PASS"
+            }
+          },
+          {
+            "status": "PASS",
+            "message": "Clock sync completed",
+            "data": {
+              "response": "PASS"
+            }
+          },
+          {
+            "status": "PASS",
+            "message": "IO loop completed",
+            "data": {
+              "response": "PASS"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "module": "voltage",
+      "status": "PASS",
+      "message": "Voltage verification passed",
+      "data": {
+        "values": {
+          "1V1": 1.05,
+          "1V2": 1.2,
+          "1V35": 1.35,
+          "2V5": 2.48,
+          "3V3": 3.31,
+          "3V3_SD": 3.29,
+          "5V": 5.02
+        },
+        "verification": {
+          "values": {
+            "1V1": 1.05,
+            "1V2": 1.2,
+            "1V35": 1.35,
+            "2V5": 2.48,
+            "3V3": 3.31,
+            "3V3_SD": 3.29,
+            "5V": 5.02
+          }
+        }
+      }
+    },
+    {
+      "module": "current",
+      "status": "PASS",
+      "message": "Current verification passed",
+      "data": {
+        "current": 0.8,
+        "verification": {
+          "current": 0.8
+        }
+      }
+    },
+    {
+      "module": "temperature",
+      "status": "PASS",
+      "message": "Temperature verification passed",
+      "data": {
+        "values": {
+          "IBCN1": 34.2,
+          "IBCN2": 35.1,
+          "IBCN3": 33.8,
+          "IBCN4": 36.0,
+          "IPSN1": 31.5
+        },
+        "verification": {
+          "values": {
+            "IBCN1": 34.2,
+            "IBCN2": 35.1,
+            "IBCN3": 33.8,
+            "IBCN4": 36.0,
+            "IPSN1": 31.5
+          }
+        }
+      }
+    },
+    {
+      "module": "ethernet",
+      "status": "PASS",
+      "message": "Ethernet verification completed",
+      "data": {
+        "results": [
+          {
+            "status": "PASS",
+            "message": "Ping result for 172.16.172.66",
+            "data": {
+              "host": "172.16.172.66",
+              "response": "PING_OK 64 bytes from 172.16.172.66"
+            }
+          },
+          {
+            "status": "PASS",
+            "message": "Ping result for 192.168.0.100",
+            "data": {
+              "host": "192.168.0.100",
+              "response": "PING_OK 64 bytes from 172.16.172.66"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "module": "led",
+      "status": "PASS",
+      "message": "LED verification simulated",
+      "data": {}
+    },
+    {
+      "module": "address",
+      "status": "PASS",
+      "message": "Address verified",
+      "data": {
+        "address": "0x55",
+        "verification": {
+          "address": "0x55"
+        }
+      }
+    },
+    {
+      "module": "dip_switch",
+      "status": "PASS",
+      "message": "DIP switch verification simulated",
+      "data": {}
+    }
+  ]
+}

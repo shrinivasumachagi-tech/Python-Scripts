@@ -1,0 +1,11 @@
+{
+  "terminal_executable": "ttermpro.exe",
+  "timeout": 30,
+  "log_folder": "logs",
+  "report_folder": "reports",
+  "default_serial": "12345678",
+  "default_mac": "00:11:22:33:44:55",
+  "default_hw_revision": "A1",
+  "expected_address": ["0x55", "0xAA"],
+  "ethernet_hosts": ["172.16.172.66", "192.168.0.100"]
+}

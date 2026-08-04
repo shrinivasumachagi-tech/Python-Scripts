@@ -1,0 +1,37 @@
+{
+  "serial": {
+    "write": "test ibcn_production set_serial",
+    "read": "test ibcn_production fpga_io 2",
+    "verify": "test ibcn_production fpga_io 2"
+  },
+  "hardware_version": {
+    "write": "set_hw_rev",
+    "read": "fpga_io 14",
+    "verify": "fpga_io 14"
+  },
+  "mac": {
+    "write": "test ibcn_production set_mac",
+    "read": "test ibcn_production fpga_io 1",
+    "verify": "test ibcn_production fpga_io 1"
+  },
+  "fpga_io": {
+    "vhdl": "fpga_io 9",
+    "nios": "fpga_io 10",
+    "wdmcu": "fpga_io 11",
+    "signal_test": "fpga_io 12",
+    "clock_sync": "clksync",
+    "io_loop": "io_loop"
+  },
+  "voltage": {
+    "read": "test ibcn_production voltage 0"
+  },
+  "current": {
+    "read": "test ibcn_production voltage 0"
+  },
+  "temperature": {
+    "read": "test ibcn_production temperature 0"
+  },
+  "address": {
+    "read": "fpga_io 7"
+  }
+}

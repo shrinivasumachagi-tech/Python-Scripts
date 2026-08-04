@@ -1,0 +1,13 @@
+module,status,message
+startup,PASS,Boot sequence completed
+serial_number,PASS,Serial number workflow completed
+hardware_version,PASS,Hardware revision workflow completed
+mac_address,PASS,MAC workflow completed
+fpga_io,FAIL,FPGA I/O workflow completed
+voltage,FAIL,Voltage verification failed
+current,PASS,Current verification passed
+temperature,PASS,Temperature verification passed
+ethernet,PASS,Ethernet verification completed
+led,PASS,LED verification simulated
+address,PASS,Address verified
+dip_switch,PASS,DIP switch verification simulated

@@ -44,11 +44,6 @@ pyautogui.press("enter")
 time.sleep(5)
 
 # -----------------------------
-# Close Tera Term
-# -----------------------------
-pyautogui.hotkey("alt", "f4")
-
-time.sleep(1)
-
-# Close confirmation (if any)
-pyautogui.press("enter")
+# Close only Tera Term
+process.terminate()
+process.wait()
